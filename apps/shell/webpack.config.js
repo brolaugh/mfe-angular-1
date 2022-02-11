@@ -48,39 +48,39 @@ module.exports = {
         login: 'http://localhost:4201/remoteEntry.js',
         dashboard: 'http://localhost:4202/remoteEntry.js',
       },
-      shared: share({
-        '@angular/core': {
-          singleton: true,
-          strictVersion: true,
-          requiredVersion: 'auto',
-          includeSecondaries: true,
-        },
-        '@angular/common': {
-          singleton: true,
-          strictVersion: true,
-          requiredVersion: 'auto',
-          includeSecondaries: true,
-        },
-        '@angular/common/http': {
-          singleton: true,
-          strictVersion: true,
-          requiredVersion: 'auto',
-          includeSecondaries: true,
-        },
-        '@angular/router': {
-          singleton: true,
-          strictVersion: true,
-          requiredVersion: 'auto',
-          includeSecondaries: true,
-        },
-        rxjs: {
-          singleton: true,
-          strictVersion: true,
-          requiredVersion: 'auto',
-          includeSecondaries: true,
-        },
-        ...sharedMappings.getDescriptors(),
-      }),
+      // shared: share({
+      //   '@angular/core': {
+      //     singleton: true,
+      //     strictVersion: true,
+      //     requiredVersion: 'auto',
+      //     includeSecondaries: true,
+      //   },
+      //   '@angular/common': {
+      //     singleton: true,
+      //     strictVersion: true,
+      //     requiredVersion: 'auto',
+      //     includeSecondaries: true,
+      //   },
+      //   '@angular/common/http': {
+      //     singleton: true,
+      //     strictVersion: true,
+      //     requiredVersion: 'auto',
+      //     includeSecondaries: true,
+      //   },
+      //   '@angular/router': {
+      //     singleton: true,
+      //     strictVersion: true,
+      //     requiredVersion: 'auto',
+      //     includeSecondaries: true,
+      //   },
+      //   rxjs: {
+      //     singleton: true,
+      //     strictVersion: true,
+      //     requiredVersion: 'auto',
+      //     includeSecondaries: true,
+      //   },
+      //   ...sharedMappings.getDescriptors(),
+      // }),
       library: {
         type: 'module',
       },
